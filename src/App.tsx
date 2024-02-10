@@ -8,7 +8,6 @@ import { useTodos } from "./useTodos";
 
 const App = () => {
   const todos = useTodos((state) => state.todos);
-  // const { optimisticAddTodo } = useTodos((state) => state.actions);
 
   const [optimisticTodos, optimisticAddTodo] = useOptimistic<string[], string>(
     todos,
