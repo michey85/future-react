@@ -21,9 +21,9 @@ const Form = ({ optimisticAddTodo }: FormProps) => {
   return (
     // @ts-ignore
     <form action={handleFormAction}>
-      {/* <form action={formAction}> */}
       <Input placeholder="todo title" name="todo" />
       <SubmitButton>add todo</SubmitButton>
+
       <br />
       {message}
     </form>
